@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Text('WhatsApp'),
+          actions: [IconButton(onPressed: (){}, icon: Icon(Icons.settings))],
           bottom: TabBar(tabs: [
 
             Tab(
