@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/src/feature/calls/call_widget.dart';
 import 'package:whatsapp/src/feature/chat/chat_widget.dart';
 import 'package:whatsapp/src/feature/community/community_widget.dart';
+import 'package:whatsapp/src/feature/settings/chat_settings/chat_settings.dart';
 import 'package:whatsapp/src/feature/status/status_widget.dart';
 // import 'package:whatsapp/src/feature/calls/call_widget.dart';
 
@@ -46,6 +47,8 @@ class _HomePageState extends State<HomePage> {
             ChatListWidget(),
             StatusListWidget(),
             callListWidget(),
+            ChatSettings()
+            
             
            ],
         )),
