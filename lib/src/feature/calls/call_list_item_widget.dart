@@ -39,10 +39,7 @@ class CallListItemWidget extends StatelessWidget {
             Icons.phone,
             color: Colors.green,
           ),
-          // Text(
-          //   DateTimeHelper.getFormattedDate(subTitle),
-          //   style: TextStyle(color: Colors.black, fontSize: 12),
-          // ),
+        
           SizedBox(
             width: 8,
           ),

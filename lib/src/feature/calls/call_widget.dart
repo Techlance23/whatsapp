@@ -46,16 +46,23 @@ class callListWidget extends StatelessWidget {
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: DateTime(2023, 08, 24), 
         ),
-        CallListItemWidget(
-          title:"Sumith",
-          image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-          subTitle: DateTime(2023, 08, 22), 
-        ),
-        CallListItemWidget(
-          title:"Vijay",
-          image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-          subTitle: DateTime(2023, 07, 30), 
-        ),
+        
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: FloatingActionButton(
+                backgroundColor: Colors.green,
+                elevation: 10,
+                child: Icon(Icons.call),
+                onPressed: () {
+                
+                },
+              ),
+            ),
+          ),
+        
+        
 
       ],
     );
