@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/feature/calls/call_first.dart';
 import 'package:whatsapp/src/feature/calls/call_list_item_widget.dart';
 
 class callListWidget extends StatelessWidget {
@@ -8,10 +9,12 @@ class callListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
+        Call_frst(icon: Icon(Icons.link,color: Colors.white,),),
         CallListItemWidget(
           title:"Amal",
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: DateTime(2023, 09, 03), 
+          
         ),
         CallListItemWidget(
           title:"Rayan",
@@ -53,7 +56,7 @@ class callListWidget extends StatelessWidget {
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: DateTime(2023, 07, 30), 
         ),
-        
+
       ],
     );
   }
