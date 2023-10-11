@@ -1,4 +1,4 @@
-class Strings{
-  static const String name = "Amal";
+// class Strings{
+//   static const String name = "Amal";
 
-}
+// }

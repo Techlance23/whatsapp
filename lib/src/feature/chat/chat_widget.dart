@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/core/strings/strings.dart';
 import 'package:whatsapp/src/feature/chat/chat_list_item_widget.dart';
 
 class ChatListWidget extends StatelessWidget {
@@ -9,9 +10,9 @@ class ChatListWidget extends StatelessWidget {
     return ListView(
       children: [
         ChatListItemWidget(
-            title: "Amal",
-            subTitle: "hellooo",
-            image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
+            title: Strings1().title,
+            subTitle: Strings1().subtitleText,
+            image: Strings1().image,
             lastChatTime: DateTime(2023, 09, 03),
             unreadCount: 2)
       ],
