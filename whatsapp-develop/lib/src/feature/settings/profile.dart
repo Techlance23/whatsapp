@@ -22,7 +22,7 @@ class WhatsAppProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  'John Doe',
+                  'John',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class WhatsAppProfilePage extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.phone),
-            title: Text('123-456-7890'),
+            title: Text('+91 678904326'),
           ),
           ListTile(
             leading: Icon(Icons.email),
