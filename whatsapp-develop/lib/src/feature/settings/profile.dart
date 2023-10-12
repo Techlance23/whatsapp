@@ -7,7 +7,7 @@ class WhatsAppProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title: Text('ProfilePage'),
         backgroundColor: Colors.green,
       ),
       body: Column(
@@ -22,7 +22,7 @@ class WhatsAppProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  'John',
+                  'John Samuel',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
