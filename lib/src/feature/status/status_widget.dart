@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/feature/status/status_first_page.dart';
 import 'package:whatsapp/src/feature/status/status_list_item_widget.dart';
 
 class StatusListWidget extends StatelessWidget {
@@ -8,12 +9,13 @@ class StatusListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
+        StatusItem(),
         StatusListItemWidget(
           title: 'Amal',
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: "15 minutes ago",
         ),StatusListItemWidget(
-          title: 'Sanju',
+          title: 'Sooraj',
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: "20 minutes ago",
         ),
@@ -28,30 +30,30 @@ class StatusListWidget extends StatelessWidget {
           subTitle: "34 minutes ago",
         ),
         StatusListItemWidget(
-          title: 'Akshay',
+          title: 'Anson',
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: "50 minutes ago",
         ),
         StatusListItemWidget(
-          title: 'Binoy',
+          title: 'Alex',
           image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
           subTitle: "9:01",
         ),
-        StatusListItemWidget(
-          title: 'Ciril',
-          image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-          subTitle: "8:34",
-        ),
-        StatusListItemWidget(
-          title: 'Alex',
-          image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-          subTitle: "7:12",
-        ),
-        StatusListItemWidget(
-          title: 'Mithun',
-          image: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-          subTitle: "6:19",
-        )
+        Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: FloatingActionButton(
+                backgroundColor: Colors.green,
+                elevation: 10,
+                child: Icon(Icons.camera),
+                onPressed: () {
+                
+                },
+              ),
+            ),
+          ),
+        
       ],
     );
   }
