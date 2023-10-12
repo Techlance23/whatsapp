@@ -62,7 +62,7 @@ class _SelectContactPageState extends State<SelectContactPage> {
             ),
           ],
         ),
-        backgroundColor: Colors.teal[900],
+        backgroundColor: Colors.green,
         actions: <Widget>[
           IconButton(
             icon: Icon(isSearchBarActive ? Icons.close : Icons.search),
@@ -102,7 +102,7 @@ class _SelectContactPageState extends State<SelectContactPage> {
               SizedBox(height: 80, width: 16),
               CircleAvatarWithIcon(
                 icon: Icons.group,
-                backgroundColor: Colors.teal.shade900,
+                backgroundColor: Colors.green,
                 radius: 24.0,
                 iconSize: 16.0,
               ),
@@ -119,7 +119,7 @@ class _SelectContactPageState extends State<SelectContactPage> {
               SizedBox(width: 16),
               CircleAvatarWithIcon(
                 icon: Icons.person_add,
-                backgroundColor: Colors.teal.shade900,
+                backgroundColor: Colors.green,
                 radius: 24.0,
                 iconSize: 16.0,
               ),
@@ -141,7 +141,7 @@ class _SelectContactPageState extends State<SelectContactPage> {
               SizedBox(width: 16),
               CircleAvatarWithIcon(
                 icon: Icons.groups_3,
-                backgroundColor: Colors.teal.shade900,
+                backgroundColor: Colors.green,
                 radius: 24.0,
                 iconSize: 16.0,
               ),
