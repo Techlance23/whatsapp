@@ -5,6 +5,6 @@ class StatusListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('Status');
+    return Text('stat');
   }
 }
