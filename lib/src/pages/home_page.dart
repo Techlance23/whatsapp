@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
             MyWidget(),
             ChatListWidget(),
             StatusListWidget(),
-            callListWidget(),
+            CallListWidget(),
           ],
         )),
       ),

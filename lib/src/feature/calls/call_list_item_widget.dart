@@ -17,7 +17,7 @@ class CallListItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: NetworkImage(image),
+        backgroundImage: AssetImage(image),
         backgroundColor: Colors.green,
         radius: 40,
       ),
@@ -27,7 +27,7 @@ class CallListItemWidget extends StatelessWidget {
       ),
       subtitle: Text(
         DateTimeHelper.getFormattedDate(subTitle),
-        style: TextStyle(color: Colors.black, fontSize: 12),
+        style: AppTextTheme.subtitleTextstyle,
       ),
       trailing: Column(
         children: [

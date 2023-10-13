@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/src/core/helper/datetime_helper.dart';
 import 'package:whatsapp/src/core/theme/text_theme.dart';
 
 class StatusListItemWidget extends StatelessWidget {
@@ -17,20 +16,16 @@ class StatusListItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        radius: 50,
-        backgroundColor: Colors.green,
-        child: CircleAvatar(
-          radius: 40,
-          backgroundImage: NetworkImage(image),
-        ),
+        radius: 40,
+        backgroundImage: AssetImage(image),
       ),
       title: Text(
         "$title",
         style: AppTextTheme.titleTextstyle,
       ),
-      subtitle: Text("$subTitle",
-        // DateTimeHelper.getFormattedDate(subTitle),
-        style: TextStyle(color: Colors.black, fontSize: 12),
+      subtitle: Text(
+        "$subTitle",
+        style: AppTextTheme.subtitleTextstyle,
       ),
     );
   }
