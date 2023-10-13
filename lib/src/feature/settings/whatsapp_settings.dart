@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/feature/settings/invite_a_friend_page.dart';
 //import 'package:whatsapp/src/feature/settings/invite_friend_widget.dart';
 
 class SettingOption extends StatelessWidget {
@@ -104,7 +105,7 @@ class WhatsAppSettingsScreen extends StatelessWidget {
             title: 'Invite a friend',
             subtitle: '  ',
             onTap: () {
-              //  Navigator.push(context, MaterialPageRoute(builder: (context) => InviteFriendPage()));
+               Navigator.push(context, MaterialPageRoute(builder: (context) => InviteFriendPage()));
             },
             icon: Icon(Icons.person_add),
           ),
