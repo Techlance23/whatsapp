@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/pages/strings.dart';
 
 class StorageDataPage extends StatefulWidget {
   @override
@@ -18,7 +19,7 @@ class _StorageDataPageState extends State<StorageDataPage> {
             Navigator.pop(context);
           },
         ),
-        title: Text('Storage & Data'),
+        title: Text(AppStrings.text8),
         backgroundColor: Colors.green,
       ),
       body: Column(
@@ -28,10 +29,9 @@ class _StorageDataPageState extends State<StorageDataPage> {
               Icons.stop_rounded,
               size: 40,
             ),
-            title: Text('Manage storage'),
-            subtitle: Text('6.1 GB'),
+            title: Text(AppStrings.text9),
+            subtitle: Text(AppStrings.text10),
             onTap: () {
-              // Navigate to the manage storage screen
             },
           ),
           ListTile(
@@ -39,10 +39,9 @@ class _StorageDataPageState extends State<StorageDataPage> {
               Icons.incomplete_circle_sharp,
               size: 28,
             ),
-            title: Text('Network Usage'),
-            subtitle: Text('11.7 GB sent . 28.9 GB received'),
+            title: Text(AppStrings.text11),
+            subtitle: Text(AppStrings.text12),
             onTap: () {
-              // Navigate to the network usage screen
             },
           ),
           ListTile(
@@ -50,13 +49,12 @@ class _StorageDataPageState extends State<StorageDataPage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Expanded(
-                  // Use Expanded to control the width
                   child: Row(
                     children: [
                       SizedBox(
                         width: 55,
                       ),
-                      Text('Use less data for calls'),
+                      Text(AppStrings.text13),
                     ],
                   ),
                 ),
@@ -66,8 +64,7 @@ class _StorageDataPageState extends State<StorageDataPage> {
                     setState(() {
                       useLessDataForCalls = value;
                     });
-                    // Implement functionality for enabling/disabling
-                    // 'Use less data for calls'
+
                   },
                 ),
               ],
@@ -81,7 +78,7 @@ class _StorageDataPageState extends State<StorageDataPage> {
                   SizedBox(
                     width: 55,
                   ),
-                  Text('Proxy'),
+                  Text(AppStrings.text14),
                 ],
               ),
               subtitle: Row(
@@ -89,30 +86,29 @@ class _StorageDataPageState extends State<StorageDataPage> {
                   SizedBox(
                     width: 55,
                   ),
-                  Text('Off'),
+                  Text(AppStrings.text15),
                 ],
               ),
             ),
           ),
-          // Add a new section below 'Proxy'
           ListTile(
-            title: Text('Media auto-download'),
+            title: Text(AppStrings.text16),
             subtitle:
-            Text('Voice messages are always automatically downloaded'),
+            Text(AppStrings.text17),
           ),
           ListTile(
-            title: Text('When using mobile data'),
-            subtitle: Text('No media'),
+            title: Text(AppStrings.text19),
+            subtitle: Text(AppStrings.text18),
             contentPadding: EdgeInsets.only(left: 70),
           ),
           ListTile(
-            title: Text('When connected on Wi-Fi'),
-            subtitle: Text('No mdeia'),
+            title: Text(AppStrings.text20),
+            subtitle: Text(AppStrings.text18),
             contentPadding: EdgeInsets.only(left: 70),
           ),
           ListTile(
-            title: Text('When roaming'),
-            subtitle: Text('No media'),
+            title: Text(AppStrings.text21),
+            subtitle: Text(AppStrings.text18),
             contentPadding: EdgeInsets.only(left: 70),
           ),
         ],
