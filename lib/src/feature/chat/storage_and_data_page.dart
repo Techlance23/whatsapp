@@ -98,8 +98,7 @@ class _StorageDataPageState extends State<StorageDataPage> {
           // Add a new section below 'Proxy'
           ListTile(
             title: Text(AppStrings.text16),
-            subtitle:
-            Text(AppStrings.text17),
+            subtitle: Text(AppStrings.text17),
           ),
           ListTile(
             title: Text(AppStrings.text19),

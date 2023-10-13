@@ -18,9 +18,9 @@ class CustomAppBar extends StatelessWidget {
     return AppBar(
       leading: isLeadingBackButton
           ? IconButton(
-        icon: Icon(Icons.arrow_back),
-        onPressed: onLeadingPressed ?? () => Navigator.pop(context),
-      )
+              icon: Icon(Icons.arrow_back),
+              onPressed: onLeadingPressed ?? () => Navigator.pop(context),
+            )
           : null,
       title: Text(title),
       actions: actions,
