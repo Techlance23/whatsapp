@@ -4,12 +4,14 @@ import 'package:whatsapp/src/feature/chat/chat_widget.dart';
 import 'package:whatsapp/src/feature/community/community_widget.dart';
 import 'package:whatsapp/src/feature/settings/whatsapp_settings.dart';
 import 'package:whatsapp/src/feature/status/status_widget.dart';
-import 'package:whatsapp/src/strings/strings.dart'; 
+import 'package:whatsapp/src/strings/strings.dart';
+
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
   @override
   State<HomePage> createState() => _HomePageState();
 }
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -18,19 +20,17 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Strings.color,
-          title: const Text(Strings.wp),
+          title: Text(Strings.wp),
           actions: [
             IconButton(
               onPressed: () {
                 Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => WhatsAppSettingsScreen(),
-                  ),
-                );
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WhatsAppSettingsScreen()));
               },
               icon: const Icon(Icons.settings),
-            ),
+            )
           ],
           bottom: const TabBar(
             tabs: [

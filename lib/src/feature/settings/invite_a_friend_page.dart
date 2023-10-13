@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/src/strings/strings.dart';
+
 class SettingOption extends StatelessWidget {
   final String title;
   final String subtitle;
