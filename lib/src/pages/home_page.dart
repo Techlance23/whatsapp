@@ -22,13 +22,16 @@ class _HomePageState extends State<HomePage> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor:  Colors.green,
+          backgroundColor: Colors.green,
           title: Text('WhatsApp'),
           actions: [
             IconButton(
               onPressed: () {
                 // Navigate to the settings page
-                Navigator.push(context, MaterialPageRoute(builder: (context) => WhatsAppSettingsScreen()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WhatsAppSettingsScreen()));
               },
               icon: Icon(Icons.settings),
             )
