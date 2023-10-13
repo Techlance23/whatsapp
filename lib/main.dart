@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green
       
       ),
-      home: MyQR(),
+      home: QrScreen(),
     );
   }
 }
