@@ -17,8 +17,7 @@ class SettingOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      // ignore: prefer_if_null_operators
-      leading: image != null ? image : icon,
+      leading: image ?? icon,
       title: Text(title),
       subtitle: Text(subtitle),
       onTap: onTap,
@@ -26,8 +25,7 @@ class SettingOption extends StatelessWidget {
   }
 }
 class InviteFriendPage extends StatelessWidget {
-  const InviteFriendPage({super.key});
-
+  const InviteFriendPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,48 +50,6 @@ class InviteFriendPage extends StatelessWidget {
           ),
           SettingOption(
             title: Strings.abn,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.amal,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.anandhu,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.anas,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.angel,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.kailas,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.lk,
-            subtitle: Strings.phone,
-            onTap: () {},
-            icon: const Icon(Icons.person),
-          ),
-          SettingOption(
-            title: Strings.vino,
             subtitle: Strings.phone,
             onTap: () {},
             icon: const Icon(Icons.person),
