@@ -147,7 +147,7 @@ class WhatsAppSettingsScreen extends StatelessWidget {
           SettingOption(
             title: 'Invite a friend',
 
-            subtitle: '',
+            subtitle: '  ',
             onTap: () {
                Navigator.push(context, MaterialPageRoute(builder: (context) => InviteFriendPage()));
             },
