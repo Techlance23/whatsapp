@@ -28,4 +28,5 @@ class Strings{
   static const String phone = '+91 8330863172';
   static const String share =  'Share link';
   static const String settings =  'Settings';
+  static const String demo = 'Flutter Demo';
 }
