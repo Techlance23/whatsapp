@@ -1,20 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/src/pages/custom_app_bar.dart';
 import 'package:whatsapp/src/pages/strings.dart';
 import 'package:whatsapp/src/pages/textstyles.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SelectContactPage(),
-    );
-  }
-}
 
 class SelectContactPage extends StatefulWidget {
   @override
