@@ -5,13 +5,11 @@ import 'package:whatsapp/src/feature/community/community_widget.dart';
 import 'package:whatsapp/src/feature/settings/whatsapp_settings.dart';
 import 'package:whatsapp/src/feature/status/status_widget.dart';
 import 'package:whatsapp/src/strings/strings.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
   @override
   State<HomePage> createState() => _HomePageState();
 }
-
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
@@ -29,10 +27,10 @@ class _HomePageState extends State<HomePage> {
                     MaterialPageRoute(
                         builder: (context) => WhatsAppSettingsScreen()));
               },
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
             )
           ],
-          bottom: TabBar(
+          bottom: const TabBar(
             tabs: [
               Tab(
                 icon: Icon(Icons.people),
@@ -52,10 +50,10 @@ class _HomePageState extends State<HomePage> {
         body: SafeArea(
           child: TabBarView(
             children: [
-              MyWidget(),
-              ChatListWidget(),
-              StatusListWidget(),
-              callListWidget(),
+              const MyWidget(),
+              const ChatListWidget(),
+              const StatusListWidget(),
+              const callListWidget(),
               WhatsAppSettingsScreen(),
             ],
           ),
