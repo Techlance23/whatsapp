@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/strings/strings.dart';
 
 class SettingOption extends StatelessWidget {
   final String title;
   final String subtitle;
-  final  Icon icon;
+  final Icon icon;
   final Image? image;
-  
-  
   final Function() onTap;
 
   const SettingOption({
@@ -16,13 +15,12 @@ class SettingOption extends StatelessWidget {
     required this.onTap,
     required this.icon,
     this.image,
-    
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-     leading: image != null?  image: icon,
+      leading: image != null ? image : icon,
       title: Text(title),
       subtitle: Text(subtitle),
       onTap: onTap,
@@ -35,105 +33,72 @@ class InviteFriendPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Invite a friend'),
+        title: Text(Strings.invite),
         backgroundColor: Colors.green,
-         actions: [
+        actions: [
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: () {
-              
-            },
+            onPressed: () {},
           ),
         ],
       ),
       body: ListView(
         children: [
-           SettingOption(
-            title: 'Share link',
+          SettingOption(
+            title: Strings.share,
             subtitle: '',
-            onTap: () {
-              
-            },
+            onTap: () {},
             icon: Icon(Icons.share),
             image: Image.asset('assets/images/img2.jpg'),
-            
           ),
-          // Account
           SettingOption(
-            title: 'Abin',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+            title: Strings.abn,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-
-           SettingOption(
-            title: 'Amal',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.amal,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'Anandhu',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.anandhu,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'Anasooya',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.anas,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'Angel',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.angel,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'kailas',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.kailas,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'Lakshmi',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.lk,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-
           ),
-           SettingOption(
-            title: 'Vino',
-            subtitle: '+91 8330863172',
-            onTap: () {
-            
-            },
+          SettingOption(
+            title: Strings.vino,
+            subtitle: Strings.phone,
+            onTap: () {},
             icon: Icon(Icons.person),
-            
-
           ),
-          
         ],
       ),
     );

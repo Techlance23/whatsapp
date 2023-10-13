@@ -18,4 +18,14 @@ class Strings{
   static const String hp = 'Help';
   static const String hpc = 'Help centre, contact us, privacy policy';
   static const String invite = 'Invite a friend';
+  static const String lk = 'Lakshmi';
+  static const String kailas = 'Kailas';
+  static const String angel = 'Angel';
+  static const String anas = 'Anasooya';
+  static const String anandhu = 'Anandhu';
+  static const String amal = 'Amal';
+  static const String abn = 'Abin';
+  static const String phone = '+91 8330863172';
+  static const String share =  'Share link';
+  static const String settings =  'Settings';
 }

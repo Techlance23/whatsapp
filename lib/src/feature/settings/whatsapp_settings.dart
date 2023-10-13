@@ -35,7 +35,7 @@ class WhatsAppSettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text(Strings.settings),
         backgroundColor: Colors.green,
         actions: [
           IconButton(
@@ -103,7 +103,7 @@ class WhatsAppSettingsScreen extends StatelessWidget {
           ),
           SettingOption(
             title: Strings.invite,
-            subtitle: '  ',
+            subtitle: '',
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => InviteFriendPage()));
