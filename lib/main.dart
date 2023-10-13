@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/feature/settings/chatsettings/qrcode/my_code.dart';
+import 'package:whatsapp/src/feature/settings/chatsettings/qrcode/qr_page.dart';
+import 'package:whatsapp/src/feature/settings/profile.dart';
 import 'package:whatsapp/src/pages/home_page.dart';
 
 void main() {
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green
       
       ),
-      home: HomePage(),
+      home: QrScreen(),
     );
   }
 }
