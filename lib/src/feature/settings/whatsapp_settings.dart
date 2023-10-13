@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/src/feature/settings/invite_a_friend_page.dart';
-//import 'package:whatsapp/src/feature/settings/invite_friend_widget.dart';
+import 'package:whatsapp/src/strings/strings.dart';
 
 class SettingOption extends StatelessWidget {
   final String title;
@@ -47,65 +47,66 @@ class WhatsAppSettingsScreen extends StatelessWidget {
       body: ListView(
         children: [
           SettingOption(
-            title: 'ViNo V',
-            subtitle: 'Hey there! Iam using WhatsApp',
+            title: Strings.vino,
+            subtitle: Strings.ws,
             onTap: () {},
             icon: Icon(Icons.account_box),
             image: Image.asset('assets/images/vino.jpg'),
           ),
           SettingOption(
-            title: 'Account',
-            subtitle: 'Security notifications, change number',
+            title: Strings.ac,
+            subtitle: Strings.acc,
             onTap: () {},
             icon: Icon(Icons.account_box),
           ),
           SettingOption(
-            title: 'Privacy',
-            subtitle: 'Block contacts, disappearing messages',
+            title: Strings.pr,
+            subtitle: Strings.prc,
             onTap: () {},
             icon: Icon(Icons.privacy_tip),
           ),
           SettingOption(
-            title: 'Avatar',
-            subtitle: 'Create, edit, profile photo',
+            title: Strings.av,
+            subtitle: Strings.avc,
             onTap: () {},
             icon: Icon(Icons.image),
           ),
           SettingOption(
-            title: 'Chats',
-            subtitle: 'Theme, wallpapers, chat history',
+            title: Strings.cc,
+            subtitle: Strings.ccc,
             onTap: () {},
             icon: Icon(Icons.chat),
           ),
           SettingOption(
-            title: 'Notifications',
-            subtitle: 'Message, group & call tones',
+            title: Strings.nc,
+            subtitle: Strings.ncc,
             onTap: () {},
             icon: Icon(Icons.notifications),
           ),
           SettingOption(
-            title: 'Storage and data',
-            subtitle: 'Network usage, auto-download',
+            title: Strings.sc,
+            subtitle: Strings.scc,
             onTap: () {},
             icon: Icon(Icons.storage),
           ),
           SettingOption(
-            title: 'App language',
-            subtitle: 'English (device\'s language)',
+            title: Strings.ap,
+            subtitle: Strings.apc,
             onTap: () {},
             icon: Icon(Icons.language),
           ),
           SettingOption(
-            title: 'Help',
-            subtitle: 'Help centre, contact us, privacy policy',
+            title: Strings.hp,
+            subtitle: Strings.hpc,
             onTap: () {},
             icon: Icon(Icons.help),
           ),
           SettingOption(
-            title: 'Invite a friend',
+            title: Strings.invite,
             subtitle: '  ',
             onTap: () {
-               Navigator.push(context, MaterialPageRoute(builder: (context) => InviteFriendPage()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => InviteFriendPage()));
             },
             icon: Icon(Icons.person_add),
           ),
