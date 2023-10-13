@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/src/feature/calls/call_widget.dart';
 import 'package:whatsapp/src/feature/chat/chat_widget.dart';
+import 'package:whatsapp/src/feature/chat/select_contact.dart';
 import 'package:whatsapp/src/feature/community/community_widget.dart';
 import 'package:whatsapp/src/feature/status/status_widget.dart';
 // import 'package:whatsapp/src/feature/calls/call_widget.dart';
@@ -48,7 +49,19 @@ class _HomePageState extends State<HomePage> {
             callListWidget(),
             
            ],
-        )),
+        )
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.teal[900],
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => SelectContactPage(),
+                ),
+            );// Add your action here
+          },
+          child: Icon(Icons.message), // Icon displayed on the FAB
+        ),
       ),
     );
   }
