@@ -21,7 +21,7 @@ class CommunityWidget extends StatelessWidget {
     return ListTile(
 
       leading: CircleAvatar(
-        backgroundImage: NetworkImage(image),
+        backgroundImage: AssetImage(image),
         radius: 40,
       ),
 

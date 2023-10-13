@@ -8,8 +8,8 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        CommunityWidget(title: "Cusat Updates", subTitle: "6282457856 added", image: "https://cusat.ac.in/images/campus/campus.jpg", lastChatTime: DateTime(2023,05,11), unreadCount: 2),
-        CommunityWidget(title: "Christ ", subTitle: "Results published", image: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Christ_College%2CIrinjalakuda.JPG", lastChatTime: DateTime(2023,05,12), unreadCount: 5)
+        CommunityWidget(title: "Cusat Updates", subTitle: "6282457856 added", image: "assets/image/campus10.jpg", lastChatTime: DateTime(2023,05,11), unreadCount: 2),
+        CommunityWidget(title: "Christ ", subTitle: "Results published", image: "assets/image/christ college.jpg", lastChatTime: DateTime(2023,05,12), unreadCount: 5)
       ],
     );
   }
