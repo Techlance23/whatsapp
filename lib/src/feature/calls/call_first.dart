@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/core/strings/strings.dart';
 import 'package:whatsapp/src/core/theme/text_theme.dart';
 
-class Call_frst extends StatelessWidget {
-  const Call_frst({super.key, required this.icon});
+class CallFirst extends StatelessWidget {
+  const CallFirst({super.key, required this.icon});
   final Icon icon;
   @override
   Widget build(BuildContext context) {
@@ -24,12 +25,12 @@ class Call_frst extends StatelessWidget {
           
           
           title: Text(
-            "Create call Link",
+            Strings.text1,
             style: AppTextTheme.titleTextstyle,
           ),
           subtitle: Text(
-            "Share a link for your Whatsapp Call",
-            style: TextStyle(color: Colors.black, fontSize: 12),
+            Strings.text2,
+            style: AppTextTheme.subtitleTextstyle,
           ),
         ),
         SizedBox(height: 7,),
@@ -37,7 +38,7 @@ class Call_frst extends StatelessWidget {
           padding: const EdgeInsets.only(left:10.0),
           child: Row(
             children: [
-              Text("Recent",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600),)
+              Text(Strings.recent,style: AppTextTheme.titleTextstyle)
             ],
           ),
         ),

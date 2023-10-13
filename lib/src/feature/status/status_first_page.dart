@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/core/strings/strings.dart';
 import 'package:whatsapp/src/core/theme/text_theme.dart';
 
 class StatusItem extends StatelessWidget {
@@ -13,33 +14,43 @@ class StatusItem extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Status",style: AppTextTheme.titleTextstyle,),
+              Text(
+                Strings.text3,
+                style: AppTextTheme.titleTextstyle,
+              ),
               Icon(Icons.more_vert)
             ],
           ),
         ),
-        SizedBox(height: 10,),
+        SizedBox(
+          height: 10,
+        ),
         ListTile(
           leading: CircleAvatar(
-        backgroundImage: NetworkImage("https://cdn-icons-png.flaticon.com/512/219/219983.png"),
-        backgroundColor: Colors.green,
-        radius: 40,
-      ),
-      title: Text(
-        "My status",
-        style: AppTextTheme.titleTextstyle,
-      ),
-      subtitle: Text(
-        "Tap to add status update",
-        style: TextStyle(color: Colors.black, fontSize: 12),
-      ),
+            backgroundImage: AssetImage("assets/images/user.png"),
+            backgroundColor: Colors.green,
+            radius: 40,
+          ),
+          title: Text(
+            Strings.text4,
+            style: AppTextTheme.titleTextstyle,
+          ),
+          subtitle: Text(
+            Strings.text5,
+            style: AppTextTheme.subtitleTextstyle,
+          ),
         ),
-        SizedBox(height: 10,),
+        SizedBox(
+          height: 10,
+        ),
         Padding(
-          padding: const EdgeInsets.only(left:10.0),
+          padding: const EdgeInsets.only(left: 10.0),
           child: Row(
             children: [
-              Text("Recent updates",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600),)
+              Text(
+                Strings.text6,
+                style: AppTextTheme.titleTextstyle,
+              )
             ],
           ),
         ),

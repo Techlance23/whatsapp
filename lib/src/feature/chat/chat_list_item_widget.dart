@@ -48,7 +48,6 @@ class ChatListItemWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.green,
               shape: BoxShape.circle,
-              // borderRadius: BorderRadius.circular(50)
             ),
             child: Align(
               alignment: Alignment.center,
