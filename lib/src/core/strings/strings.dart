@@ -1,0 +1,29 @@
+class Strings{
+  static final recent = "Recent";
+  static final text1 = "Create call Link";
+  static final text2 = "Share a link for your Whatsapp Call";
+  static final text3 = "Status";
+  static final text4 = "My status";
+  static final text5 = "Tap to add status update";
+  static final text6 = "Recent updates";
+  static final img = "assets/images/user.png";
+  static final img2 = "assets/images/user2.png";
+  static final img3 = "assets/images/user3.png";
+  static final img4 = "assets/images/user4.png";
+  static final img5 = "assets/images/user5.jpeg";
+  static final img6 = "assets/images/user6.png";
+  static final name1 = "Amal";
+  static final name2 = "Minna";
+  static final name3 = "Anliya";
+  static final name4 = "Rose";
+  static final name5 = "Anson";
+  static final name6 = "Alex";
+  static final name7 = "Ashok";
+  static final name8 = "Sindhu";
+  static final sub1 = "15 minutes ago";
+  static final sub2 = "20 minutes ago";
+  static final sub3 = "30 minutes ago";
+  static final sub4 = "34 minutes ago";
+  static final sub5 = "50 minutes ago";
+  static final sub6 = "9:01"; 
+}
