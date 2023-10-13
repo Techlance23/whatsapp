@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Strings.color,
-          title: Text(Strings.wp),
+          title: const Text(Strings.wp),
           actions: [
             IconButton(
               onPressed: () {
