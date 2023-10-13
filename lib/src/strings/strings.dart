@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Strings{
   static const String vino = 'ViNo V';
   static const String ws = 'Hey there! Iam using WhatsApp';
@@ -29,4 +31,9 @@ class Strings{
   static const String share =  'Share link';
   static const String settings =  'Settings';
   static const String demo = 'Flutter Demo';
+  static const String wp = 'Whatsapp';
+  static const String ch = 'Chat';
+  static const String st = 'Status';
+  static const String cl = 'Calls';
+  static const Color color = Colors.green;
 }

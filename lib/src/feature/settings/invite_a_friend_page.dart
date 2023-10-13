@@ -49,7 +49,7 @@ class InviteFriendPage extends StatelessWidget {
             subtitle: '',
             onTap: () {},
             icon: Icon(Icons.share),
-            image: Image.asset('assets/images/img2.jpg'),
+            image: Image.asset('assets/images/img_2.jpg'),
           ),
           SettingOption(
             title: Strings.abn,
