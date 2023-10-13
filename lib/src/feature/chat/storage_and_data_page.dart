@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/src/pages/strings.dart';
 
+
 class StorageDataPage extends StatefulWidget {
   @override
   _StorageDataPageState createState() => _StorageDataPageState();
