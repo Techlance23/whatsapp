@@ -22,13 +22,11 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Colors.green,
           title: Text('WhatsApp'),
           bottom: TabBar(tabs: [
-
             Tab(
               icon: Icon(Icons.people),
             ),
             Tab(
               text: 'Chat',
-             
             ),
             Tab(
               text: 'Status',
@@ -36,18 +34,16 @@ class _HomePageState extends State<HomePage> {
             Tab(
               text: 'Calls',
             ),
-            
           ]),
         ),
         body: SafeArea(
             child: TabBarView(
-          children: [  
+          children: [
             MyWidget(),
             ChatListWidget(),
             StatusListWidget(),
-            callListWidget(),
-            
-           ],
+            CallListWidget(),
+          ],
         )),
       ),
     );
