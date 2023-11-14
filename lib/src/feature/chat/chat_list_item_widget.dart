@@ -22,7 +22,7 @@ class ChatListItemWidget extends StatelessWidget {
     return ListTile(
 
       leading: CircleAvatar(
-        backgroundImage: NetworkImage(image),
+        backgroundImage: AssetImage("assets/images/user1.png"),
         radius: 40,
       ),
 

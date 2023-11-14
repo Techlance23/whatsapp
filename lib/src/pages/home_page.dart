@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/colors/colors.dart';
+import 'package:whatsapp/src/core/constant/strings.dart';
 import 'package:whatsapp/src/feature/calls/call_widget.dart';
 import 'package:whatsapp/src/feature/chat/chat_widget.dart';
 import 'package:whatsapp/src/feature/community/community_widget.dart';
@@ -19,35 +21,31 @@ class _HomePageState extends State<HomePage> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text('WhatsApp'),
+          backgroundColor: ColorConstants.kPrimaryColor,
+          title: Text(Strings.whatsApptext),
           bottom: TabBar(tabs: [
-
             Tab(
               icon: Icon(Icons.people),
             ),
             Tab(
-              text: 'Chat',
-             
+              text: Strings.chatText,
             ),
             Tab(
-              text: 'Status',
+              text: Strings.statusText,
             ),
             Tab(
-              text: 'Calls',
+              text: Strings.callsText,
             ),
-            
           ]),
         ),
         body: SafeArea(
             child: TabBarView(
-          children: [  
-            MyWidget(),
+          children: [
             ChatListWidget(),
+            MyWidget(),
             StatusListWidget(),
             callListWidget(),
-            
-           ],
+          ],
         )),
       ),
     );
