@@ -1,14 +1,15 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:whatsapp/src/color/colors.dart';
+import 'package:whatsapp/src/core/constants/strings.dart';
+import 'package:whatsapp/src/feature/settings/profile_widget.dart';
 
 class WhatsAppProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
-        backgroundColor: Colors.green,
+        title: Text(Strings.profileText),
+        backgroundColor: ColorConstants.kPrimaryColor,
       ),
       body: Column(
         children: <Widget>[
@@ -17,39 +18,25 @@ class WhatsAppProfilePage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 CircleAvatar(
+                  foregroundImage: AssetImage("assets/images/user.png"),
+                  backgroundImage: AssetImage("assets/images/user.png"),
                   radius: 50.0,
-                  backgroundImage: AssetImage(""), // Replace with your image
                 ),
                 SizedBox(height: 10.0),
-                Text(
-                  'John',
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  'john.doe@example.com',
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    color: Colors.grey,
-                  ),
-                ),
               ],
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.phone),
-            title: Text('123-456-7890'),
+          ProfileWidget(
+            icon: Icon(Icons.account_circle),
+            title: Strings.usernametext,
+            subTitle: Strings.subText,
           ),
-          ListTile(
-            leading: Icon(Icons.email),
-            title: Text('john.doe@example.com'),
-          ),
-          ListTile(
-            leading: Icon(Icons.location_on),
-            title: Text('1234 Elm St, Springfield, IL'),
-          ),
+          ProfileWidget(
+              icon: Icon(Icons.info_outline),
+              title: Strings.aboutText,
+              subTitle: ''),
+          ProfileWidget(
+              icon: Icon(Icons.phone), title: Strings.phonenumber, subTitle: '')
         ],
       ),
     );
