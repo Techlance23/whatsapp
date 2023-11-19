@@ -20,8 +20,24 @@ class WhatsAppProfilePage extends StatelessWidget {
                 CircleAvatar(
                   foregroundImage: AssetImage("assets/images/user.png"),
                   backgroundImage: AssetImage("assets/images/user.png"),
-                  radius: 50.0,
+                  radius: 70.0,
+
+                  
                 ),
+                 Padding(
+                   padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
+                   child: CircleAvatar(
+                      backgroundColor: Colors.green,
+                      radius: 25,
+                      child: IconButton(
+                        iconSize:15,
+                        color: Colors.white,
+                        icon: const Icon(Icons.camera_alt_rounded),
+                        onPressed: () {
+                        },
+                      ),
+                    ),
+                 ),
                 SizedBox(height: 10.0),
               ],
             ),
